@@ -27,6 +27,7 @@ const createBlog = async (req, res) => {
 
     const savedBlog = await newBlog.save();
 
+
     res
       .status(200)
       .send(`successfully created a blog. your blog info is ${savedBlog}`);
